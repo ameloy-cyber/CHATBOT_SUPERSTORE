@@ -11,6 +11,7 @@ import streamlit as st
 from datetime import datetime
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
+pip install scikit-learn
 
 
 EXCEL_FILE = r"C:\Users\Sala_\Downloads\superstore.xlsx"
@@ -119,3 +120,4 @@ while True:
         response = "❓ No entendí tu consulta."
     print("🤖 Bot:", response)
     save_interaction(user_input, response)
+
